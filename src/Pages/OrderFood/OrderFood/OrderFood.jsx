@@ -35,8 +35,8 @@ const OrderFood = () => {
             <Cover img={orderCover} title={'OUR SHOP'} description={'Would you like to try a dish?'}></Cover>
 
             <Tabs selectedIndex={tabIndex} onSelect={(index) => setTabIndex(index)}>
-                <TabList>
-                    <Tab>Salad</Tab>
+                <TabList className={'text-2xl'}>
+                    <Tab >Salad</Tab>
                     <Tab>Pizza</Tab>
                     <Tab>Soup</Tab>
                     <Tab>Dessert</Tab>

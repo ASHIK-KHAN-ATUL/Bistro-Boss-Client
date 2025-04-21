@@ -61,18 +61,18 @@ const FoodCard = ({item}) => {
     }
 
     return (
-            <div className="card  w-80  mx-auto bg-[##F3F3F3] shadow-lg scale-90">
+            <div className="card w-96 mx-auto bg-sky-50 shadow-xl scale-95 hover:scale-90 duration-500 transition-all cursor-pointer">
 
-                <img className="h-[180px] object-cover border-2 border-black" src={image} alt={name} />
-                <p className="bg-black text-white absolute right-0 mr-3 mt-3 p-2 font-medium rounded-lg">${price}</p>
+                <img className="h-[350px] object-cover border-2 border-black mb-5" src={image} alt={name} />
+                <p className="bg-black text-white absolute right-0 mr-3 mt-3 p-2 font-medium text-2xl rounded-lg">${price}</p>
 
                 <div className="p-5 flex flex-col gap-4 justify-center items-center">
-                    <h2 className="card-title font-bold">{name}</h2>
-                    <p className='font-medium'>{recipe}</p>
+                    <h2 className="text-3xl text-center font-bold">{name}</h2>
+                    <p className='font-medium text-xl'>{recipe}</p>
                     <div className="card-actions justify-end ">
                         <button 
                         onClick={handleAddToCart}
-                        className={`btn duration-300 font-bold  text-orange-400 border-b-4 bg-white border-orange-400 hover:text-white hover:bg-black hover:border-b-4 hover:border-orange-400 hover:border-black" }`} >Add TO CART</button>
+                        className={`btn duration-300 font-bold text-2xl my-5 text-orange-400 border-b-4 bg-white border-orange-400 hover:text-white hover:bg-black hover:border-b-4 hover:border-orange-400 hover:border-black" }`} >Add TO CART</button>
                     </div>
                 </div>
             </div>

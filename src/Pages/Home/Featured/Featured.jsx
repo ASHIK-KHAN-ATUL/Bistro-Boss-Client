@@ -18,14 +18,14 @@ const Featured = () => {
                 heading={"Fetured Item"}
             ></SectionTitle>
             <div className=' flex flex-col md:flex-row justify-center items-center py-10 px-12 md:py-20 md:px-24 gap-10 bg-red-200 bg-opacity-40'>
-                <div>
+                <div className='w-1/2'>
                     <img src={featuredPic} alt="" />
                 </div>
-                <div className='font-medium text-black sm:text-white '>
-                    <p>{formattedDate}</p>
-                    <p className='py-4'>Where i can get some ?</p>
-                    <p className='uppercase'>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Veniam optio adipisci autem accusamus, commodi eius atque cum ab molestiae ea repudiandae expedita praesentium dolorum similique quam aspernatur, eum deserunt ipsum?</p>
-                    <button className='btn btn-outline border-0 border-b-4 hover:border-b-4 border-red-500 hover:border-white duration-500 text-lg font-bold mt-4'>Order Now</button>
+                <div className=' w-1/2 font-medium text-black sm:text-white '>
+                    <p className='text-3xl'>{formattedDate}</p>
+                    <p className='py-4 text-4xl text-lime-400'>Where i can get some ?</p>
+                    <p className='uppercase text-2xl'>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Veniam optio adipisci autem accusamus, commodi eius atque cum ab molestiae ea repudiandae expedita praesentium dolorum similique quam aspernatur, eum deserunt ipsum?</p>
+                    <button className='btn btn-outline border-0 border-b-4 hover:border-b-4 border-red-500 hover:border-white duration-500 text-3xl font-bold mt-4 text-blue-400'>Order Now</button>
                 </div>
             </div>
         </div>

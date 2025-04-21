@@ -54,48 +54,48 @@ const SignUp = () => {
         <Helmet>
             <title>Bistro Boss | Sign Up</title>
         </Helmet>
-        <div className="hero bg-base-200 min-h-screen">
-            <div className="hero-content flex-col lg:flex-row-reverse">
+        <div className="hero bg-green-50 min-h-screen">
+            <div className="hero-content flex-col ">
                 <div className="text-center md-w-1/2">
                     <h1 className="text-5xl font-bold">Sign up now!</h1>
-                    <p className="py-6">
+                    <p className="py-10 mx-[10%]">
                         Provident cupiditate voluptatem et in. Quaerat fugiat ut assumenda excepturi exercitationem
                         quasi. In deleniti eaque aut repudiandae et a id nisi.
                     </p>
                 </div>
-                <div className="card bg-base-100 w-full max-w-sm shrink-0 shadow-2xl">
-                    <form onSubmit={handleSubmit(onSubmit)} className="card-body">
-                        <div className="form-control">
+                <div className="card bg-sky-50 w-[65%] shrink-0 shadow-2xl">
+                    <form onSubmit={handleSubmit(onSubmit)} className="card-body flex flex-col items-start gap-7  p-10">
+                        <div className="form-control w-full flex flex-col   ">
                             <label className="label">
-                                <span className="label-text">Name</span>
+                                <span className="label-text text-2xl">Name</span>
                             </label>
-                            <input type="text" {...register("name", { required: true })} name='name' placeholder="Name" className="input input-bordered"  />
+                            <input type="text" {...register("name", { required: true })} name='name' placeholder="Name" className="input input-bordered w-full   "  />
                             {errors.name && <span className='text-red-400'>Name is required</span>}
                         </div>
-                        <div className="form-control">
+                        <div className="form-control w-full flex flex-col ">
                             <label className="label">
-                                <span className="label-text">Photo URL</span>
+                                <span className="label-text text-2xl">Photo URL</span>
                             </label>
-                            <input type="text" {...register("photoURL", { required: true })} name='photoURL' placeholder="photoURL" className="input input-bordered"  />
+                            <input type="text" {...register("photoURL", { required: true })} name='photoURL' placeholder="photoURL" className="input input-bordered w-full"  />
                             {errors.name && <span className='text-red-400'>PhotoURL is required</span>}
                         </div>
-                        <div className="form-control">
+                        <div className="form-control w-full flex flex-col ">
                             <label className="label">
-                                <span className="label-text">Email</span>
+                                <span className="label-text text-2xl">Email</span>
                             </label>
-                            <input type="email" {...register("email" , { required: true })} name='email' placeholder="Email" className="input input-bordered"  />
+                            <input type="email" {...register("email" , { required: true })} name='email' placeholder="Email" className="input input-bordered w-full"  />
                             {errors.email && <span className='text-red-400'>Email is required</span>}
 
                         </div>
-                        <div className="form-control">
+                        <div className="form-control w-full flex flex-col ">
                             <label className="label">
-                                <span className="label-text">Password</span>
+                                <span className="label-text text-2xl">Password</span>
                             </label>
                             <input type="password" {...register("password" , { 
                                 required: true, 
                                 pattern: /(?=.*[A-Z])(?=.*[0-9])(?=.*[a-z])/,
                                 minLength:6, 
-                                maxLength: 20 })} name='password' placeholder="Password" className="input input-bordered"  />
+                                maxLength: 20 })} name='password' placeholder="Password" className="input input-bordered w-full"  />
 
                             {errors.password?.type === "required" && (
                                 <p className='text-red-500'>Password is required</p>
@@ -115,10 +115,10 @@ const SignUp = () => {
                             </label>
                         </div>
                         <div className="form-control mt-6">
-                            <input className="btn btn-primary" type="submit" value="Sign up" />
+                            <input className="btn btn-primary text-xl" type="submit" value="Sign up" />
                         </div>
                     </form>
-                    <p className='text-center my-5'><small>Already Have An Account? <Link className='text-green-500' to={'/login'}>Login</Link></small></p>
+                    <div className='text-center my-5 text-xl'><p>Already Have An Account? <Link className='text-green-500' to={'/login'}>Login</Link></p></div>
                     <SocialLogin></SocialLogin>
                 </div>
             </div>

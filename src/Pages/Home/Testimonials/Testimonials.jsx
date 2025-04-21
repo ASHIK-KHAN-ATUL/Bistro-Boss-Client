@@ -53,8 +53,8 @@ const Testimonials = () => {
 
                             />
                             <img src={'https://img.icons8.com/?size=100&id=ZrQhxIVeIp4x&format=png&color=000000'} alt="" />
-                            <p>{review.details}</p>
-                            <h3 className='text-2xl text-orange-400'>{review.name}</h3>
+                            <p className='text-2xl'>{review.details}</p>
+                            <h3 className='text-3xl text-orange-400'>{review.name}</h3>
                         </div>
                     </SwiperSlide> )
                 }

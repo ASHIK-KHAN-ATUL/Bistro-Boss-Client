@@ -44,11 +44,11 @@ const CheifRecommends = () => {
 
                             <img src={menu.image} alt={menu.name} />
 
-                        <div className="p-5 flex flex-col gap-4 justify-center items-center">
-                            <h2 className="card-title font-bold">{menu.name}</h2>
-                            <p className='font-medium'>{menu.recipe}</p>
+                        <div className="p-5 flex flex-col gap-7 justify-center items-center">
+                            <h2 className="text-2xl font-bold">{menu.name}</h2>
+                            <p className='font-medium text-xl'>{menu.recipe}</p>
                             <div className="card-actions justify-end ">
-                            <button className={`btn duration-300 font-bold ${idx % 2 === 0 ? "text-orange-400 border-b-4 bg-white border-orange-400 hover:text-white hover:bg-orange-400 hover:border-b-4 hover:border-black " : "bg-black text-orange-400 hover:text-black hover:bg-orange-400 hover:border-b-4 hover:border-black" }`} >Add TO CART</button>
+                            <button className={`btn duration-300 text-xl font-bold ${idx % 2 === 0 ? "text-orange-400 border-b-4 bg-white border-orange-400 hover:text-white hover:bg-orange-400 hover:border-b-4 hover:border-black " : "bg-black text-orange-400 hover:text-black hover:bg-orange-400 hover:border-b-4 hover:border-black" }`} >Add TO CART</button>
                             </div>
                         </div>
                     </div>
